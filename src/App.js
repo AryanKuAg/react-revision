@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <center>
-        <h1>Hello handsome {my_name ?? "yes"}</h1>
+        <h1 style={{ color: "#FF2E63" }}>Hello handsome {my_name ?? "yes"}</h1>
         <Header />
         <Footer />
         <ClassHeader />
