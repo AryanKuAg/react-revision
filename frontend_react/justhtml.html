@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="home"></div>
+
+    <script type="text/babel">
+      const LikeIt = () => {
+        function clicked() {
+          console.log("clicked");
+        }
+        return <button onClick={clicked}> click me</button>;
+      };
+
+      const Nothing = (_) => {
+        return (
+          <div>
+            <p>nothing like me</p>
+            <button>click me</button>
+            <h1>nonono</h1>
+          </div>
+        );
+      };
+      ReactDOM.render(<Nothing />, document.getElementById("home"));
+    </script>
+  </body>
+</html>
