@@ -1,0 +1,48 @@
+<div id='main'>
+  <div id='one'></div>
+  <div id='two'></div>
+  
+  <div id='three'></div>
+  
+</div>
+<style>
+  *{
+    margin:0;
+  }
+  #main{
+    width: 100%;
+    position:relative;
+    display:flex;
+    height: 100%;
+    background: #0B2429;
+    justify-content:center;
+    align-items:center;
+  }
+  #one{
+    width:155;
+    height:150;
+    position:absolute;
+    right:70;
+    background:#F3AC3C;
+    border-radius: 70% 0 70% 0;
+    z-index:2;
+  }
+  #two{
+   width:155;
+    height:150;
+    position:absolute;
+    
+    background:#998235;
+    border-radius: 70% 0 70% 0;
+    z-index:1;
+  }
+  #three{
+    width:155;
+    height:150;
+    position:absolute;
+    left:70;
+    background:#1A4341;
+    border-radius: 70% 0 70% 0;
+    z-index:0;
+  }
+</style>

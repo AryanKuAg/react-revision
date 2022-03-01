@@ -1,0 +1,41 @@
+<div id="main">
+  <div id="one" class="box"></div>
+  <div id="two" class="box"></div>
+  <div id="three" class="box"></div>
+  
+  
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #main {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    justify-content:center;
+    align-content:center;
+    width: 100%;
+    height: 100%;
+    background: #e3516e;
+  }
+  .box {
+    background: green;
+    width: 100px;
+    height: 100px;
+    
+  }
+  #one {
+    background:#51B5A9;
+    border-radius: 100% 0 0 0;
+  }
+  #two {
+    background:#FADE8B;
+    border-radius: 0 100% 0 0;
+  }
+  #three {
+  	background:#F7F3D7;
+    border-radius: 0 0 0 100% ;
+  }
+</style>
